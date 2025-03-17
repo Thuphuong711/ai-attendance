@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const password = document.getElementById("register-password").value;
         const role = document.querySelector('input[name="role"]:checked').value; 
     
-        const response = await fetch("http://localhost:3000/register", {
+        const response = await fetch("https://aiattendance-tcorxylv.b4a.run/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
     
-        const response = await fetch("http://localhost:3000/login", {
+        const response = await fetch("https://aiattendance-tcorxylv.b4a.run/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
